@@ -1,0 +1,95 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Centering the box-container in the viewport */
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4185EC; /* Viewport background color */
+}
+
+/* Styling the container */
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Adding a shadow for a fancy look */
+    width: 90%;
+    max-width: 400px; /* Limiting the max width for better UI/UX */
+}
+
+/* Styling the headings */
+.container h1, .container h2 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: 650;
+}
+
+/* Styling the paragraph */
+.container p {
+    color: #555;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Styling the input */
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+}
+
+input[type="text"]:focus {
+    box-shadow:  0 3px 0 0 rgba(0, 0, 0, 0.05); /* Shadow on focus */
+    outline: none; /* Removing default outline */
+}
+
+/* Styling the download button */
+button.download {
+    width: 100%;
+    padding: 15px;
+    background-color: #4185EC; /* Button background color */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+button.download:hover {
+    background-color: #356bbd; 
+}
+
+button.download:active {
+    transform: scale(0.98); 
+    transition: transform 0.1s; 
+}
+
+/* Fancy animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation for the container */
+}
